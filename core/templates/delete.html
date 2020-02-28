@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quarkdo</title>
+</head>
+<body>
+	<form method="post">
+		{% csrf_token %}
+	  <p>Are you sure you want to delete "{{ taskss }}"?</p>
+	  <input type="submit" value="Confirm">
+	</form>
+</body>
+</html>

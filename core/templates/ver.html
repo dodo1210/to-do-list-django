@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Tarefas</h1>
+	<div>
+		{% for task in tasks %}
+			<p>
+				ID: {{task.pk}} | Título:{{task.title}} | Descrição: {{task.description}} | 
+				{% if task.markup == False%} Não finalizado {%else%} <b>Finalizado</b> {%endif%} | Início: {{task.begin}} | Fim: {{task.end}} | Membros na tarefa: 
+				{{members.username}} 
+			
+				<a href="/editar/{{task.pk}}">Editar</a> 
+				<a href="/remover/{{task.pk}}">Remover</a>
+				{%if task.markup == False %}
+				<a href="/terminar/{{task.pk}}">Terminar</a>
+				{%endif%}
+			</p>
+		{% endfor %}
+	</div>
+</body>
+</html>

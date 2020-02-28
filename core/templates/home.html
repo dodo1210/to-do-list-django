@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Criar Tarefas</h1>
+	<form method="post">
+		{% csrf_token %}
+	  {% for field in form %}
+			{{field.errors}}
+			{{field.label}}
+			{{field}}
+		{% endfor%}
+		<input type="submit" name="Save" value="Criar Tarefa">
+	</form>
+	<a href="/ver/">Visualizar Tarefas</a>
+</body>
+</html>

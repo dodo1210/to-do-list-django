@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quarkdo</title>
+</head>
+<body>
+	<h3>CADASTRO DE NOVOS USUÁRIOS</h3>
+	<div>
+		<form id="edit-form" method="post">
+      {% csrf_token %}
+      {{ form }}
+      <input type="submit" name="button">
+	  </form>
+		<button type="submit">Confirmar</button>
+		</form>
+	</div>
+</body>
+</html>
