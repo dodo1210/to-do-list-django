@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form action="/auth_change/" method="post">
+		{% csrf_token %}
+		<p>Informe o email</p>
+	    </label>
+	    <input type="login" id="inputLogin" placeholder="Usuario123" name="email">
+		<input type="submit" value="Verificar">
+	</form>
+</body>
+</html>

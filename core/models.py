@@ -12,5 +12,5 @@ class Tasks(models.Model):
 	title = models.CharField(max_length=60, blank=True)
 	description = models.TextField(verbose_name='Descrição', blank=True)
 	markup = models.BooleanField(verbose_name='Terminado',default=False)
-	begin = models.DateTimeField(verbose_name='Data_Cadastro',default=timezone.now)
-	end = models.DateTimeField(verbose_name='Data_Cadastro',default=timezone.now)
+	begin = models.DateTimeField(verbose_name='Data de Início',default=timezone.now)
+	end = models.DateTimeField(verbose_name='Data de Fim',default=timezone.now)
