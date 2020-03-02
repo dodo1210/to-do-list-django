@@ -18,8 +18,15 @@ class RegisterForm(UserCreationForm):
 			user.save()
 		return user
 
+class MainTasks(forms.ModelForm):
+	
+	class Meta:
+		model = MainTasks
+		fields = ['title']
+
+
 class Tasks(forms.ModelForm):
 	
 	class Meta:
 		model = Tasks
-		fields = ['user','title','description','markup','begin','end']
+		fields = ['title','user','end']
