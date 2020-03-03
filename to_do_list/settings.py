@@ -125,3 +125,13 @@ EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'contatoiatrader@gmail.com'
 EMAIL_HOST_PASSWORD = 'dodo123.'
+
+
+BROKER_URL = 'amqp://guest:guest@localhost:5672//'
+CELERY_ACCEPT_CONTENT = ['json']
+CELERY_TASK_SERIALIZER = 'json'
+CELERY_RESULT_SERIALIZER = 'json'
+
+import django_heroku
+django_heroku.settings(locals())
+

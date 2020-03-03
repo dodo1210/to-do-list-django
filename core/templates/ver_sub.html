@@ -9,8 +9,7 @@
 		{% for task in tasks %}
 			<p>
 				ID: {{task.pk}} | Título:{{task.title}} | Descrição: {{task.description}} | 
-				{% if task.markup == False%} Não finalizado {%else%} <b>Finalizado</b> {%endif%} | Início: {{task.begin}} | Fim: {{task.end}} | Membros na tarefa: 
-				{{members.username}} 
+				{% if task.markup == False%} Não finalizado {%else%} <b>Finalizado</b> {%endif%} | Início: {{task.begin}} | Fim: {{task.end}}  
 			
 				<a href="/editar_tarefa/{{task.pk}}">Editar</a> 
 				<a href="/remover_tarefa/{{task.pk}}">Remover</a>

@@ -183,7 +183,6 @@ def date_interview(request,pk,date):
         break
   if date_sort == []:
     return JsonResponse({"email":'Não foi possível enviar email, pois não há tarefas'})
-
   a = email(request,date_sort)
   if str(a) == '<JsonResponse status_code=200, "application/json">':
     return JsonResponse({"email":'Email enviado com sucesso'})
