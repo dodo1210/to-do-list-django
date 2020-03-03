@@ -1,6 +1,6 @@
 # to do list django
 
-Esta aplicação cria-se lista com nomes e sub tarefas para cada lista. Além disso, é enviado para o email com uma lista de prioridades.
+Esta aplicação cria-se lista com nomes e sub tarefas para cada lista. Além disso, é enviado para o email com uma lista de prioridades. Também há a possibilidade de gerar relatórios do momento em que esta as tarefas.
 
 /mudar_senha/id -> Página para mudança de senha após a verificação.
 /register -> cadastro de usuário
