@@ -27,13 +27,6 @@ cachetools==4.0.0
 celery==4.4.1
 certifi==2019.9.11
 cffi==1.12.3
-chardet==3.0.4
-clyent==1.2.2
-colorama==0.4.1
-conda==4.7.12
-conda-build==3.18.9
-conda-package-handling==1.6.0
-conda-verify==3.4.2
 contextlib2==0.6.0
 cryptography==2.7
 cssselect==1.1.0
