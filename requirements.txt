@@ -29,10 +29,7 @@ certifi==2019.9.11
 cffi==1.12.3
 chardet==3.0.4
 chromedriver-binary==79.0.3945.36.0
-<<<<<<< HEAD
-=======
 Click==7.0
->>>>>>> 055c5db1dd8158f3a7aea2ee65d358267a512642
 clyent==1.2.2
 colorama==0.4.1
 conda==4.7.12
