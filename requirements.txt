@@ -5,3 +5,4 @@ django-crispy-forms==1.8.1
 django-heroku==0.3.1
 djangorestframework==3.11.0
 amqp==2.5.2
+celery==4.4.1
