@@ -25,7 +25,7 @@ boto==2.49.0
 Bottleneck==1.2.1
 cachetools==4.0.0
 celery==4.4.1
-certifi==2019.9.11
+certifi==2022.12.7
 cffi==1.12.3
 contextlib2==0.6.0
 cryptography==2.7
